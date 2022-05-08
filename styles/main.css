@@ -1,0 +1,166 @@
+:root {
+    --main-brand-color: #5C2B84;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+
+
+header h1 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 5rem;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: 500;
+    }
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #888888;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+p {
+    color: #888888;
+    font-size: 18px;
+}
+
+h4 {
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.btn-primary {
+    background-color: var(--main-brand-color);
+    border-color: var(--main-brand-color);
+    margin: 40px 0;
+    min-width: 100px;
+}
+
+.btn-primary:hover {
+    background-color: rgba(222, 222, 222, 0.853);
+    color: var(--main-brand-color);
+    border-color: var(--main-brand-color);
+}
+
+.btn-secondary {
+    background-color: #3e3e3e;
+    border-color: #3e3e3e;
+    margin: 40px 0;
+    min-width: 100px;
+}
+
+.navbar-brand img {
+    margin: 5px;
+    height: 45px;
+}
+
+.pillar-badge {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: var(--main-brand-color);
+    width: 220px;
+    height: 220px;
+}
+
+.pillar-badge img {
+    height: 90px;
+    align-self: center;
+}
+
+#hero-home {
+    background: var(--main-brand-color) url(../assets/photos/hero-main-dark.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 680px;
+    
+}
+
+#join-banner-home {
+    background: var(--main-brand-color) url(../assets/photos/brothers_01_dark.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+#join-banner-home p {
+    font-weight: 300;
+    color: white;
+}
+
+#brotherhood-banner-home {
+    background: var(--main-brand-color) url(../assets/photos/brothers_02_dark.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+#brotherhood-banner-home p {
+    font-weight: 300;
+    color: white;
+}
+
+
+@media (max-width: 700px) {
+    #hero-home {
+        min-height: 400px;
+    }
+
+    #join-banner-home {
+        min-height: 300px;
+    }
+
+
+}
+
+
+footer {
+
+    min-height: 250px;
+    background-color: #1C1C1C;
+    color: rgb(184, 184, 184);
+}
+
+footer h2 {
+    margin-bottom: 5px;
+}
+
+footer h3 {
+
+    text-transform: capitalize;
+}
+
+footer svg {
+    height: 50px;
+    margin: 40px 20px;
+    filter: invert(100%) sepia(20%) saturate(8%) hue-rotate(298deg) brightness(110%) contrast(89%);
+}
+
+footer svg:hover {
+    cursor: pointer;
+    filter: invert(17%) sepia(66%) saturate(2046%) hue-rotate(255deg) brightness(93%) contrast(92%);
+}
