@@ -15,7 +15,7 @@ h1 {
     margin: 25px 0;
 }
 
-header h1 {
+#hero-home h1 {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-size: 5rem;
@@ -27,7 +27,7 @@ h2 {
 
 @media (max-width: 700px) {
 
-    header h1 {
+    #hero-home h1 {
         font-size: 2.5rem;
     }
 
@@ -99,9 +99,60 @@ p {
     align-self: center;
 }
 
+.pillars span {
+    padding: 30px;
+    height: 500px;
+    width: 100%;
+    background-color: var(--slb-royal-purple);
+    color: white;
+}
+
+.pillars p{
+    color: white;
+    font-weight: 300;
+}
+
+.pillars img {
+    width: 100px;
+}
+
+#pillar-scholarship {
+    background-color: var(--slb-gray);
+}
+
+#pillar-community-service {
+    background-color: var(--slb-gray);
+}
+
+@media (max-width: 768px) {
+    .pillars span {
+        height: 400px;
+    }
+    
+    .pillars img {
+        width: 60px;
+    }
+
+    #pillar-community-service {
+        background-color: var(--slb-royal-purple);
+    }
+
+    #pillar-culture {
+        background-color: var(--slb-gray);
+    }
+}
+
 /*************************************/
 /*          Backgrounds              */
 /*************************************/
+
+section {
+    background: rgb(221,221,221);
+    background: 
+        linear-gradient(0deg, rgba(221,221,221,1) 0%, 
+        rgba(236,236,236,1) 19%, 
+        rgba(255,255,255,1) 100%);
+}
 
 #hero-home {
     background: var(--slb-royal-purple) url(../assets/photos/hero-main-dark.jpg);
@@ -132,6 +183,14 @@ p {
 #brotherhood-banner-home p {
     font-weight: 300;
     color: white;
+}
+
+#hero-about {
+    min-height: 300px;
+    background: var(--slb-royal-purple) url(../assets/photos/hero-about.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 @media (max-width: 700px) {
