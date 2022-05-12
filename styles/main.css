@@ -15,7 +15,7 @@ h1 {
     margin: 25px 0;
 }
 
-#hero-home h1 {
+#hero-home h1, #hero-join h1 {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-size: 5rem;
@@ -154,11 +154,20 @@ section {
         rgba(255,255,255,1) 100%);
 }
 
+#join-stats {
+    background: #2c2c2c;
+}
+
 #hero-home {
     background: var(--slb-royal-purple) url(../assets/photos/hero-main-dark.jpg);
     background-size: cover;
     background-position: center;
     min-height: 680px;
+}
+
+#hero-join {
+    min-height: 600px;
+    background-color: var(--slb-royal-purple);
 }
 
 #join-banner-home {
@@ -204,6 +213,32 @@ section {
 
 }
 
+.requirements span {
+    background-color: var(--slb-royal-purple);
+    height: 400px;
+}
+
+#second-requirement {
+    background-color: var(--slb-gray);
+}
+
+#third-requirement {
+    background-color: var(--slb-gray);
+}
+
+@media (max-width: 768px) {
+    .requirements span {
+        height: 300px;
+    }
+    
+    #third-requirement {
+        background-color: var(--slb-royal-purple);
+    }
+    #fourth-requirement {
+        background-color: var(--slb-gray);
+    }
+}
+
 /*************************************/
 /*             Footer                */
 /*************************************/
@@ -233,4 +268,35 @@ footer svg {
 footer svg:hover {
     cursor: pointer;
     filter: invert(17%) sepia(66%) saturate(2046%) hue-rotate(255deg) brightness(93%) contrast(92%);
+}
+
+.material-icons {
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    color: white;
+    background-color: var(--slb-royal-purple);
+}
+
+@media (max-width: 768px){
+    #hero-join h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero-join {
+        min-height: 400px;
+    }
+}
+
+.content-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
 }
