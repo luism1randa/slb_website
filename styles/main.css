@@ -15,7 +15,7 @@ h1 {
     margin: 25px 0;
 }
 
-header h1 {
+#hero-home h1, #hero-join h1 {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-size: 5rem;
@@ -27,7 +27,7 @@ h2 {
 
 @media (max-width: 700px) {
 
-    header h1 {
+    #hero-home h1 {
         font-size: 2.5rem;
     }
 
@@ -99,15 +99,75 @@ p {
     align-self: center;
 }
 
+.pillars span {
+    padding: 30px;
+    height: 500px;
+    width: 100%;
+    background-color: var(--slb-royal-purple);
+    color: white;
+}
+
+.pillars p{
+    color: white;
+    font-weight: 300;
+}
+
+.pillars img {
+    width: 100px;
+}
+
+#pillar-scholarship {
+    background-color: var(--slb-gray);
+}
+
+#pillar-community-service {
+    background-color: var(--slb-gray);
+}
+
+@media (max-width: 768px) {
+    .pillars span {
+        height: 400px;
+    }
+    
+    .pillars img {
+        width: 60px;
+    }
+
+    #pillar-community-service {
+        background-color: var(--slb-royal-purple);
+    }
+
+    #pillar-culture {
+        background-color: var(--slb-gray);
+    }
+}
+
 /*************************************/
 /*          Backgrounds              */
 /*************************************/
+
+section {
+    background: rgb(221,221,221);
+    background: 
+        linear-gradient(0deg, rgba(221,221,221,1) 0%, 
+        rgba(236,236,236,1) 19%, 
+        rgba(255,255,255,1) 100%);
+}
+
+#join-stats {
+    background: #2c2c2c;
+}
 
 #hero-home {
     background: var(--slb-royal-purple) url(../assets/photos/hero-main-dark.jpg);
     background-size: cover;
     background-position: center;
     min-height: 680px;
+}
+
+#hero-join {
+    min-height: 600px;
+    background-color: var(--slb-royal-purple);
 }
 
 #join-banner-home {
@@ -134,6 +194,14 @@ p {
     color: white;
 }
 
+#hero-about {
+    min-height: 300px;
+    background: var(--slb-royal-purple) url(../assets/photos/hero-about.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
 @media (max-width: 700px) {
     #hero-home {
         min-height: 400px;
@@ -143,6 +211,32 @@ p {
         min-height: 300px;
     }
 
+}
+
+.requirements span {
+    background-color: var(--slb-royal-purple);
+    height: 400px;
+}
+
+#second-requirement {
+    background-color: var(--slb-gray);
+}
+
+#third-requirement {
+    background-color: var(--slb-gray);
+}
+
+@media (max-width: 768px) {
+    .requirements span {
+        height: 300px;
+    }
+    
+    #third-requirement {
+        background-color: var(--slb-royal-purple);
+    }
+    #fourth-requirement {
+        background-color: var(--slb-gray);
+    }
 }
 
 /*************************************/
@@ -174,4 +268,35 @@ footer svg {
 footer svg:hover {
     cursor: pointer;
     filter: invert(17%) sepia(66%) saturate(2046%) hue-rotate(255deg) brightness(93%) contrast(92%);
+}
+
+.material-icons {
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    color: white;
+    background-color: var(--slb-royal-purple);
+}
+
+@media (max-width: 768px){
+    #hero-join h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero-join {
+        min-height: 400px;
+    }
+}
+
+.content-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
 }
